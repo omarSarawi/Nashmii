@@ -1,0 +1,67 @@
+﻿@model test2.Models.Category
+
+@{
+    ViewData["Title"] = "Delete";
+    Layout = "~/Views/Shared/adminDashboard.cshtml";
+}
+
+<div class="container-fluid mt-4">
+    <!-- Page heading -->
+    <div class="row mb-4">
+        <div class="col-12">
+            <h1 class="mb-0">Delete Category</h1>
+        </div>
+    </div>
+
+    <!-- Confirmation message -->
+    <div class="row mb-3">
+        <div class="col-12">
+            <h3>Are you sure you want to delete this?</h3>
+        </div>
+    </div>
+
+    <!-- DETAILS IN A TABLE (matching Index/Details styling) -->
+    <div class="row">
+        <div class="col-12">
+            <div class="table-responsive">
+                <table class="table table-striped table-hover align-middle">
+                    <thead class="table-dark">
+                        <tr>
+                            <th scope="col">@Html.DisplayNameFor(m => m.Title)</th>
+                            <th scope="col">@Html.DisplayNameFor(m => m.Description)</th>
+                            <th scope="col">@Html.DisplayNameFor(m => m.User)</th>
+                            <th scope="col">@Html.DisplayNameFor(m => m.ImgUrl)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>@Html.DisplayFor(m => m.Title)</td>
+                            <td>@Html.DisplayFor(m => m.Description)</td>
+                            <td>@Html.DisplayFor(m => m.User.Username)</td>
+
+                            <td>
+                                <img src="@Html.DisplayFor(m => m.ImgUrl)" alt="" class="img-fluid"
+                                    style="width: 60x; height: 50px;">
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- ACTION BUTTONS -->
+    <div class="row mt-4">
+        <div class="col-12">
+            <form asp-action="Delete">
+                <input type="hidden" asp-for="Id" />
+                <button type="submit" class="btn btn-danger">
+                    <i class="bi bi-trash"></i> Delete
+                </button>
+                <a asp-action="Index" class="btn btn-secondary ms-2">
+                    <i class="bi bi-arrow-left"></i> Back to List
+                </a>
+            </form>
+        </div>
+    </div>
+</div>

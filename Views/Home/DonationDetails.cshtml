@@ -1,0 +1,210 @@
+@model test2.Models.Comping
+
+<!-- Preloader -->
+<div id="preloader">
+    <div class="preloader">
+        <span></span>
+        <span></span>
+    </div>
+</div>
+
+<!-- Promo Area Start -->
+<section class="promo-area" data-stellar-background-ratio="0.5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="promo-wrap">
+                    <h1 class="promo-title">Single <span>Cause</span></h1>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item">
+                                <a href="@Url.Action("Index", "Home")">Home</a>
+                            </li>
+                            <li class="breadcrumb-item active" aria-current="page">
+                                @Model.Title
+                            </li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Promo Area End -->
+
+<!-- Cause Page Start -->
+<div class="cause-details section-padding">
+    <div class="container">
+        <div class="row">
+            <!-- Main Content -->
+            <div class="col-lg-8 col-sm-12">
+                <article class="cause-content">
+                    <figure>
+                        <img src="@Model.ImgUrl" alt="Cause Image" />
+                    </figure>
+                    <div class="cause-info">
+                        <h2 class="article-title">@Model.Title</h2>
+                        <p><strong>Category:</strong> @Model.Category?.Title </p>
+
+
+
+                        <div class="cause-donate">
+                            <div class="cause-raise"><label>Raise</label> $@Model.Amount</div>
+                            <div class="cause-goal"><label>Goal</label> $@Model.Goal</div>
+                        </div>
+
+                        @{
+                            var progress = Model.Goal.HasValue && Model.Goal > 0
+                            ? ((double)Model.Amount.GetValueOrDefault() / Model.Goal.Value) * 100
+                            : 0;
+                        }
+
+                        <div class="progress">
+                            <div class="progress-bar wow fadeInLeft" role="progressbar"
+                                style="width: @progress.ToString("0")%" aria-valuenow="@progress" aria-valuemin="0"
+                                aria-valuemax="100">
+                                @progress.ToString("0")%
+                            </div>
+                        </div>
+
+                        <p>@Model.LongDesc</p>
+
+                    </div>
+                    <div class="article-footer p-4 d-sm-flex justify-content-between bg-white pb-5">
+                        <div class="article-tags d-sm-flex align-items-center mb-4 mb-sm-0">
+                            <!-- tags could go here -->
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Sidebar -->
+            <div class="col-lg-4 col-sm-12">
+                <aside class="sidebar">
+                    <div class="widget">
+                        <h3 class="widget-title">Donate</h3>
+                        <div class="newsletter-entry">
+                            <p>
+                                Your support matters. Click <b>Donate Now</b> to make a difference.
+                            </p>
+                            <a href="@Url.Action("Donate", "Home", new { id = Model.Id })" target="_blank">
+                                <p class="w-100 custom-btn">Donate now</p>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Category Widget -->
+                    <div class="widget">
+                        <h3 class="widget-title">Fields Nashmi</h3>
+                        <ul>
+                            <li><a href="~/Home/Categories/28">
+                                    Educational</a></li>
+                            <li><a href="~//Home/Categories/29">
+                                    Nutrition</a></li>
+                            <li><a href="~/Home/Categories/30">
+                                    Healthcare</a></li>
+                            <li><a href="~/Home/Categories/31">
+                                    Social Solidarity</a></li>
+                            <li><a href="Home/Categories/32">
+                                    Religious</a></li>
+                        </ul>
+                    </div>
+
+                    <a href="~/Home/BloodCamping">
+                        <div class="widget">
+                            <h3 class="widget-title">Blood Donation</h3>
+                        </div>
+                    </a>
+                </aside>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Cause Page End -->
+
+<!-- Footer Area Start -->
+<footer class="footer-area">
+    <div class="footer-top"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-sm-6">
+                <div class="footer-widget footer-about">
+                    <div class="f-logo">
+                        <a href="#">
+                            <img src="~/images/components/logo-ye.png" alt="Logo" />
+                        </a>
+                    </div>
+                    <p>
+                        Support life-saving causes and empower communities by donating
+                        money to provide essential resources, donating blood to save
+                        lives, and shopping with us to support low-income entrepreneurs.
+                    </p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 offset-lg-1 col-sm-5 offset-sm-1">
+                <div class="footer-widget">
+                    <h3 class="widget-title">Useful Links</h3>
+                    <ul>
+                        <li><a href="~/">Profile</a></li>
+                        <li><a href="~/Home/AboutUs">About Us</a></li>
+                        <li><a href="~/Home/BloodCamping">Blood donation</a></li>
+                        <li><a href="~/Shop/Index">Shop</a></li>
+                        <li><a href="~/ContactRequest/CreateContact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-2 col-sm-6">
+                <div class="footer-widget">
+                    <h3 class="widget-title">Filde Nashmi </h3>
+                    <ul>
+                        <li><a href="~/Home/Categories/28">
+                                Educational</a></li>
+                        <li><a href="~//Home/Categories/29">
+                                Nutrition</a></li>
+                        <li><a href="~/Home/Categories/30">
+                                Healthcare</a></li>
+                        <li><a href="~/Home/Categories/31">
+                                Social Solidarity</a></li>
+                        <li><a href="Home/Categories/32">
+                                Religious</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-5 offset-sm-1 offset-lg-0">
+                <div class="footer-widget">
+                    <h3 class="widget-title">Contact Us</h3>
+                    <ul class="footer-contact">
+                        <li>
+                            <i class="fa fa-home"></i>
+                            <span>Jordan Amman</span>
+                        </li>
+                        <li>
+                            <i class="fa fa-phone"></i>
+                            <span><a href="tel:+00962787020188">00962787020188</a></span>
+                        </li>
+                        <li>
+                            <i class="fa fa-envelope"></i>
+                            <span><a href="mailto:omarsarawi66@gmail.com">nashmi@gmail.com</a></span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row copy-right g-0">
+            <div class="col-xl-6 col-md-7 order-2 order-md-1">
+                <p>
+                    Copyright © 2025. All Rights Reserved by
+                    <a href="#">Nashmi</a>
+                </p>
+            </div>
+
+        </div>
+    </div>
+</footer>
+<!-- Footer Area Start -->

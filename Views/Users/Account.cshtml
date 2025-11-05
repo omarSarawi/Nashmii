@@ -1,0 +1,343 @@
+@model ProfileViewModel
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>Profile Page</title>
+
+    <!-- Bootstrap 5 CSS (CDN) -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha512-+qJ3tYpmjKx7XVoWJk1fzHlDJVN5M9Q1r8XValkIk2BV4X+H6mV/CTpR1/8t0lF2o5dCJau0N1hIbx/XhJdrQA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Font Awesome (for icons) -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"
+        integrity="sha512-pO1HgTr0wDhbzdCTpoZYpQFdSS7WbBUE0CR0KyNEV6jtQfnwYvZknossihddnTteOUARVd6MfI1I2mvqbZc8kg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        body {
+            margin-top: 20px;
+            background: linear-gradient(135deg, #f5f5f5 0%, #ffffff 100%);
+            color: #343a40;
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        /* STAT CARD STYLING */
+        .stat-card {
+            border: none;
+            border-radius: 1rem;
+            transition: transform 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+        }
+
+        .stat-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .stat-card .card-body {
+            padding: 1.25rem;
+        }
+
+        .stat-card .stat-icon {
+            font-size: 1.75rem;
+            margin-right: 0.75rem;
+            opacity: 0.85;
+        }
+
+        .stat-card .stat-text {
+            font-size: 1rem;
+            font-weight: 500;
+            color: #6c757d;
+            margin-bottom: 0.25rem;
+        }
+
+        .stat-card .stat-value {
+            font-size: 1.5rem;
+            font-weight: 700;
+            line-height: 1;
+        }
+
+        /* FORM & CARD REFINEMENTS */
+        .card-header {
+            font-weight: 700;
+            background-color: #fff;
+            border-bottom: 2px solid #dee2e6;
+            border-top-left-radius: 1rem;
+            border-top-right-radius: 1rem;
+        }
+
+        .card {
+            border: none;
+            border-radius: 1rem;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+            margin-bottom: 1.5rem;
+        }
+
+        .form-label {
+            font-weight: 600;
+            color: #495057;
+        }
+
+        .input-icon {
+            position: absolute;
+            left: 1rem;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #adb5bd;
+            font-size: 1.1rem;
+        }
+
+        .input-with-icon {
+            position: relative;
+        }
+
+        .input-with-icon .form-control {
+            padding-left: 2.5rem;
+        }
+
+        /* TABLE STYLING */
+        .table-responsive thead th {
+            position: sticky;
+            top: 0;
+            background-color: #fff;
+            z-index: 1;
+        }
+
+        .table-hover tbody tr:hover {
+            background-color: rgba(0, 0, 0, 0.03);
+        }
+
+        #donationSearch {
+            max-width: 300px;
+        }
+
+        .btn-delete {
+            color: #dc3545;
+            border: none;
+            background: transparent;
+            font-size: 1.1rem;
+            transition: color 0.15s ease-in-out;
+        }
+
+        .btn-delete:hover {
+            color: #a71d2a;
+            text-decoration: none;
+        }
+
+        @@media (max-width: 767.98px) {
+
+            /* On small screens, make the search input full width */
+            #donationSearch {
+                max-width: none;
+                margin-bottom: 0.75rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-xl px-3 px-md-4 py-5">
+        <div class="row gx-4 gy-4">
+            <!----- Left column: STAT CARDS ----->
+            <aside class="col-lg-4">
+                <div class="row gx-3 gy-3">
+                    <!-- Donations Count -->
+                    <div class="col-md-6 col-lg-12">
+                        <div class="card stat-card shadow-sm">
+                            <div class="card-body d-flex align-items-center">
+                                <i class="fas fa-hand-holding-heart stat-icon text-primary"></i>
+                                <div>
+                                    <div class="stat-text">Donations</div>
+                                    <div class="stat-value">@Model.TotalDonationsCount</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Total Amount -->
+                    <div class="col-md-6 col-lg-12">
+                        <div class="card stat-card shadow-sm">
+                            <div class="card-body d-flex align-items-center">
+                                <i class="fas fa-dollar-sign stat-icon text-success"></i>
+                                <div>
+                                    <div class="stat-text">Total Amount</div>
+                                    <div class="stat-value">@Model.TotalDonationAmount.ToString("C0")</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Units Donated -->
+                    <div class="col-md-6 col-lg-12">
+                        <div class="card stat-card shadow-sm">
+                            <div class="card-body d-flex align-items-center">
+                                <i class="fas fa-tint stat-icon text-info"></i>
+                                <div>
+                                    <div class="stat-text">Units Donated</div>
+                                    <div class="stat-value">@Model.TotalUnitsDonated</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Last Donation Date -->
+                    <div class="col-md-6 col-lg-12">
+                        <div class="card stat-card shadow-sm">
+                            <div class="card-body d-flex align-items-center">
+                                <i class="fas fa-calendar-alt stat-icon text-warning"></i>
+                                <div>
+                                    <div class="stat-text">Last Donation</div>
+                                    <div class="stat-value">
+                                        @(Model.LastDonationDate?.ToString("MMM dd, yyyy") ?? "—")
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+
+            <!----- Main column: ACCOUNT FORM & DONATIONS TABLE ----->
+            <main class="col-lg-8">
+                <!-- Account Details Form -->
+                <section class="card bg-white">
+                    <div class="card-header">Account Details</div>
+                    <div class="card-body">
+                        <form asp-action="SaveProfile" asp-controller="Users" method="post">
+                            <div class="row g-3 mb-3 align-items-center">
+                                <label asp-for="Username" class="col-lg-3 col-form-label form-label">Username</label>
+                                <div class="col-lg-9">
+                                    <input asp-for="Username" class="form-control" />
+                                </div>
+                            </div>
+
+                            <div class="row g-3 mb-3 align-items-center">
+                                <label asp-for="Role" class="col-lg-3 col-form-label form-label">Role</label>
+                                <div class="col-lg-9">
+                                    <input asp-for="Role" class="form-control" />
+                                </div>
+                            </div>
+
+                            <div class="row g-3 mb-4 align-items-center">
+                                <label class="col-lg-3 col-form-label form-label">Contact</label>
+                                <div class="col-lg-4 input-with-icon">
+                                    <i class="fas fa-envelope input-icon"></i>
+                                    <input asp-for="Email" class="form-control" placeholder="Email" />
+                                </div>
+                                <div class="col-lg-5 input-with-icon">
+                                    <i class="fas fa-phone input-icon"></i>
+                                    <input asp-for="Phone" class="form-control" placeholder="Phone" id="inputPhone" />
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-9 offset-lg-3 d-flex justify-content-end gap-2">
+                                    <button type="button" class="btn btn-outline-secondary px-4" data-bs-toggle="modal"
+                                        data-bs-target="#changePasswordModal">
+                                        Change Password
+                                    </button>
+                                    <button type="submit" class="btn btn-primary px-4">Save Changes</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </section>
+
+                <!-- Recent Donations Table -->
+                <section class="card bg-white">
+                    <div
+                        class="card-header d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center gap-2">
+                        <span class="fw-bold">Recent Donations</span>
+                        <input type="text" id="donationSearch" class="form-control form-control-sm"
+                            placeholder="Search…" />
+                    </div>
+                    <div class="card-body p-0">
+                        <div class="table-responsive">
+                            <table class="table table-hover table-striped mb-0">
+                                <thead class="table-light">
+                                    <tr>
+                                        <th>Campaign</th>
+                                        <th>Date</th>
+                                        <th>Amount</th>
+                                        <th>Unit</th>
+                                        <th class="text-center">Actions</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="donationsTableBody">
+                                    @foreach (var d in Model.Donations)
+                                    {
+                                        <tr>
+                                            <td>@d.CampaignType</td>
+                                            <td>@d.Date.ToString("MMM dd, yyyy")</td>
+                                            <td>@d.DonationAmount</td>
+                                            <td>@d.UnitType</td>
+                                            <td class="text-center">
+                                                <button class="btn-delete" data-id="@d.DonationId" data-action="delete"
+                                                    title="Delete">
+                                                    <i class="fas fa-trash-alt"></i>
+                                                </button>
+                                            </td>
+                                        </tr>
+                                    }
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </div>
+
+    <!-- Change-password modal -->
+    <partial name="_ChangePasswordModal" />
+
+    <!-- Bootstrap 5 JS + Popper (CDN) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"
+        integrity="sha512-ENvVrZn7liVnRbBaCGZPdEr3/Hyyg2qAz297ANHsR/j2u4BOQ0zJCM+rQXQtcEto6rMMixg+Q0R4FzPHo0XOBg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- intl-tel-input JS (for phone formatting) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"
+        integrity="sha512-VN+NQoU7Xb/pbC7+I7bhjqkpQ4bGHRNaZeYHdP1Etcm/dtkRoStvIIL4m5/kWEe8rkUTSCnwGgHS5JQkE8A7qQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            // Formatted phone input
+            intlTelInput(document.querySelector("#inputPhone"), {
+                utilsScript:
+                    "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+            });
+
+            // Table filter
+            const searchInput = document.getElementById("donationSearch");
+            const tableBody = document.getElementById("donationsTableBody");
+            searchInput.addEventListener("input", () => {
+                const term = searchInput.value.toLowerCase();
+                Array.from(tableBody.rows).forEach((row) => {
+                    row.style.display = row.textContent.toLowerCase().includes(term)
+                        ? ""
+                        : "none";
+                });
+            });
+
+            // Delete handler
+            tableBody.addEventListener("click", (e) => {
+                const btn = e.target.closest("[data-action='delete']");
+                if (!btn) return;
+                const row = btn.closest("tr");
+                const name = row.cells[0].textContent;
+                if (
+                    confirm(`Delete the entry for “${name}”?`)
+                ) {
+                    row.remove();
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

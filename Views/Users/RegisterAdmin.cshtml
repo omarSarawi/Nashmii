@@ -1,0 +1,66 @@
+﻿@model test2.Models.User
+@{
+    ViewData["Title"] = "Register Admin";
+}
+
+<div class="d-flex align-items-center justify-content-center min-vh-100 bg-light">
+    <div class="card shadow-sm" style="max-width: 400px; width: 100%;">
+        <div class="card-body p-4">
+            <h3 class="card-title text-center mb-4">Register Admin</h3>
+            <form asp-action="RegisterAdmin" method="post">
+
+                <!-- Username -->
+                <div class="form-floating mb-3">
+
+                    <input asp-for="Username" class="form-control" id="Username" placeholder="Username" required />
+                    <label for="Username">Username <span class="text-danger">*</span></label>
+
+                </div>
+
+                <!-- Email -->
+                <div class="form-floating mb-3">
+                    <input asp-for="Email" type="email" class="form-control" id="Email" placeholder="name@example.com"
+                        required />
+                    <label for="Email">Email <span class="text-danger">*</span></label>
+                </div>
+
+                <!-- Password + Show/Hide -->
+                <div class="form-floating mb-3 position-relative">
+                    <input asp-for="Password" type="password" class="form-control" id="Password" placeholder="Password"
+                        required />
+                    <label for="Password">Password <span class="text-danger">*</span></label>
+                    <button type="button"
+                        class="btn btn-sm btn-outline-secondary position-absolute top-50 end-0 translate-middle-y me-2"
+                        id="togglePassword">
+                        Show
+                    </button>
+                </div>
+
+                <!-- Phone -->
+                <div class="form-floating mb-4">
+                    <input asp-for="Phone" class="form-control" id="Phone" placeholder="Phone" required />
+                    <label for="Phone">Phone <span class="text-danger">*</span></label>
+                </div>
+
+                <!-- Submit -->
+                <button type="submit" class="w-100 btn btn-warning btn-lg">
+                    Register Admin
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        (function () {
+            const pwd = document.getElementById('Password');
+            const toggleBtn = document.getElementById('togglePassword');
+            toggleBtn.addEventListener('click', () => {
+                const type = pwd.getAttribute('type') === 'password' ? 'text' : 'password';
+                pwd.setAttribute('type', type);
+                toggleBtn.textContent = type === 'password' ? 'Show' : 'Hide';
+            });
+        })();
+    </script>
+}

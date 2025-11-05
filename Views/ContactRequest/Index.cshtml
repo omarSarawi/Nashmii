@@ -1,0 +1,71 @@
+@model IEnumerable<ContactRequest>
+@{
+    ViewData["Title"] = "Contact Requests";
+    Layout = "~/Views/Shared/adminDashboard.cshtml"; // Use admin layout
+}
+<!-- Page heading -->
+<div class="row align-items-center mb-4">
+    <div class="col-12">
+        <h1 class="mb-0">ContactRequest</h1>
+    </div>
+    @if (TempData["Message"] != null)
+    {
+        <div class="alert alert-success">@TempData["Message"]</div>
+    }
+
+    <table class="table table-striped table-hover shadow-sm">
+        <thead class="table-dark">
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Image</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Status</th>
+                <th>Category</th>
+                <th>Created</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var req in Model)
+            {
+                <tr>
+                    <td>@req.OwnerReqId</td>
+                    <td>@req.Name</td>
+                    <td>
+                    <img src="@req.ImageURL" alt="Image" class="img-fluid" style="width: 60px; height: 50px;">
+                    </td>
+                    <td>@req.Email</td>
+                    <td>@req.Phone</td>
+                    <td>
+                        @if (req.Status == ContactStatus.Pending)
+                        {
+                            <span class="badge bg-warning text-dark">Pending</span>
+                        }
+                        else if (req.Status == ContactStatus.Approved)
+                        {
+                            <span class="badge bg-success">Approved</span>
+                        }
+                        else
+                        {
+                            <span class="badge bg-danger">Rejected</span>
+                        }
+                    </td>
+                    
+                    <td>@req.CategoryType</td>
+                    <td>@req.CreatedAt.ToShortDateString()</td>
+                <td> @if (req.Status == ContactStatus.Pending)
+                        {
+                            <form asp-action="ApproveContect" asp-route-id="@req.Id" method="post" class="d-inline">
+                                <button type="submit" class="btn btn-sm btn-outline-success">Approve</button>
+                            </form>
+                            <form asp-action="Reject" asp-route-id="@req.Id" method="post" class="d-inline">
+                                <button type="submit" class="btn btn-sm btn-outline-danger">Reject</button>
+                            </form>
+                        }</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

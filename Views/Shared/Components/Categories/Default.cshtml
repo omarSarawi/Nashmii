@@ -1,0 +1,12 @@
+@model IEnumerable<Category>
+
+<ul class="dropdown-menu">
+    @foreach (var category in Model)
+    {
+        <li>
+            <a class="dropdown-item" href=@Url.Action("Categories", "Home", new { id = category.Id })>
+                @category.Title
+            </a>
+        </li>
+    }
+</ul>

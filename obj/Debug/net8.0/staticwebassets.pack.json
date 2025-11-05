@@ -1,0 +1,913 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\n19\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\test2.bundle.scp.css",
+      "PackagePath": "staticwebassets\\test2.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\css\\Naseem_Admin_Dashboard.css",
+      "PackagePath": "staticwebassets\\css\\Naseem_Admin_Dashboard.css"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\css\\animate.css",
+      "PackagePath": "staticwebassets\\css\\animate.css"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\css\\bootstrap.min copy.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap.min copy.css"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\css\\font\\Flaticon-2.html",
+      "PackagePath": "staticwebassets\\css\\font\\Flaticon-2.html"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\css\\font\\Flaticon-3.html",
+      "PackagePath": "staticwebassets\\css\\font\\Flaticon-3.html"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\css\\font\\Flaticon.html",
+      "PackagePath": "staticwebassets\\css\\font\\Flaticon.html"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\css\\font\\Flaticon.ttf",
+      "PackagePath": "staticwebassets\\css\\font\\Flaticon.ttf"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\css\\font\\Flaticond41d.html",
+      "PackagePath": "staticwebassets\\css\\font\\Flaticond41d.html"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\css\\font\\flaticon.css",
+      "PackagePath": "staticwebassets\\css\\font\\flaticon.css"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\css\\fontawesome\\all.min.css",
+      "PackagePath": "staticwebassets\\css\\fontawesome\\all.min.css"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\css\\images\\ui-icons_444444_256x240.html",
+      "PackagePath": "staticwebassets\\css\\images\\ui-icons_444444_256x240.html"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\css\\images\\ui-icons_555555_256x240.html",
+      "PackagePath": "staticwebassets\\css\\images\\ui-icons_555555_256x240.html"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\css\\images\\ui-icons_777620_256x240.html",
+      "PackagePath": "staticwebassets\\css\\images\\ui-icons_777620_256x240.html"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\css\\images\\ui-icons_777777_256x240.html",
+      "PackagePath": "staticwebassets\\css\\images\\ui-icons_777777_256x240.html"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\css\\images\\ui-icons_cc0000_256x240.html",
+      "PackagePath": "staticwebassets\\css\\images\\ui-icons_cc0000_256x240.html"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\css\\images\\ui-icons_ffffff_256x240.html",
+      "PackagePath": "staticwebassets\\css\\images\\ui-icons_ffffff_256x240.html"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\css\\jquery-ui.min.css",
+      "PackagePath": "staticwebassets\\css\\jquery-ui.min.css"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\css\\magnific-popup.css",
+      "PackagePath": "staticwebassets\\css\\magnific-popup.css"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\css\\nice-select.css",
+      "PackagePath": "staticwebassets\\css\\nice-select.css"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\css\\owl.carousel.min.css",
+      "PackagePath": "staticwebassets\\css\\owl.carousel.min.css"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\css\\owl.video.play.html",
+      "PackagePath": "staticwebassets\\css\\owl.video.play.html"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\css\\style.css",
+      "PackagePath": "staticwebassets\\css\\style.css"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\images\\6032912914995856423.jpg",
+      "PackagePath": "staticwebassets\\images\\6032912914995856423.jpg"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\images\\Prince Hamzah Hospital.jpg",
+      "PackagePath": "staticwebassets\\images\\Prince Hamzah Hospital.jpg"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\images\\about-us\\about-us1.jpg",
+      "PackagePath": "staticwebassets\\images\\about-us\\about-us1.jpg"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\images\\about-us\\about-us2.jpg",
+      "PackagePath": "staticwebassets\\images\\about-us\\about-us2.jpg"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\images\\about-us\\about-us3.jpg",
+      "PackagePath": "staticwebassets\\images\\about-us\\about-us3.jpg"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\images\\banner\\0b2.jpg",
+      "PackagePath": "staticwebassets\\images\\banner\\0b2.jpg"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\images\\banner\\ban.jpg",
+      "PackagePath": "staticwebassets\\images\\banner\\ban.jpg"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\images\\banner\\banner-s1.jpg",
+      "PackagePath": "staticwebassets\\images\\banner\\banner-s1.jpg"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\images\\banner\\banner-s2.jpg",
+      "PackagePath": "staticwebassets\\images\\banner\\banner-s2.jpg"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\images\\banner\\banner-s3.jpg",
+      "PackagePath": "staticwebassets\\images\\banner\\banner-s3.jpg"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\images\\banner\\banner-s4.jpg",
+      "PackagePath": "staticwebassets\\images\\banner\\banner-s4.jpg"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\images\\banner\\banner2.jpg",
+      "PackagePath": "staticwebassets\\images\\banner\\banner2.jpg"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\images\\banner\\banner4.jpg",
+      "PackagePath": "staticwebassets\\images\\banner\\banner4.jpg"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\images\\banner\\banner5.jpg",
+      "PackagePath": "staticwebassets\\images\\banner\\banner5.jpg"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\images\\banner\\banner7.jpg",
+      "PackagePath": "staticwebassets\\images\\banner\\banner7.jpg"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\images\\banner\\bg-shape.png",
+      "PackagePath": "staticwebassets\\images\\banner\\bg-shape.png"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\images\\banner\\cta-bg.jpg",
+      "PackagePath": "staticwebassets\\images\\banner\\cta-bg.jpg"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\images\\banner\\donation.jpg",
+      "PackagePath": "staticwebassets\\images\\banner\\donation.jpg"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\images\\banner\\team-bg.jpg",
+      "PackagePath": "staticwebassets\\images\\banner\\team-bg.jpg"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\images\\banner\\volunteer.jpg",
+      "PackagePath": "staticwebassets\\images\\banner\\volunteer.jpg"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\images\\blog\\blog-1.jpg",
+      "PackagePath": "staticwebassets\\images\\blog\\blog-1.jpg"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\images\\blog\\blog-2.jpg",
+      "PackagePath": "staticwebassets\\images\\blog\\blog-2.jpg"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\images\\blog\\blog-3.jpg",
+      "PackagePath": "staticwebassets\\images\\blog\\blog-3.jpg"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\images\\blog\\blog-4.jpg",
+      "PackagePath": "staticwebassets\\images\\blog\\blog-4.jpg"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\images\\blog\\blog-5.jpg",
+      "PackagePath": "staticwebassets\\images\\blog\\blog-5.jpg"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\images\\blog\\blog-6.jpg",
+      "PackagePath": "staticwebassets\\images\\blog\\blog-6.jpg"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\images\\blog\\blog-7.jpg",
+      "PackagePath": "staticwebassets\\images\\blog\\blog-7.jpg"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\images\\blog\\blog-8.jpg",
+      "PackagePath": "staticwebassets\\images\\blog\\blog-8.jpg"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\images\\blog\\blog-9.jpg",
+      "PackagePath": "staticwebassets\\images\\blog\\blog-9.jpg"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\images\\blog\\cl.jpg",
+      "PackagePath": "staticwebassets\\images\\blog\\cl.jpg"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\images\\blog\\cl2.jpg",
+      "PackagePath": "staticwebassets\\images\\blog\\cl2.jpg"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\images\\blog\\cl3.jpg",
+      "PackagePath": "staticwebassets\\images\\blog\\cl3.jpg"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\images\\blog\\ins1.jpg",
+      "PackagePath": "staticwebassets\\images\\blog\\ins1.jpg"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\images\\blog\\ins2.jpg",
+      "PackagePath": "staticwebassets\\images\\blog\\ins2.jpg"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\images\\blog\\ins4.jpg",
+      "PackagePath": "staticwebassets\\images\\blog\\ins4.jpg"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\images\\blog\\ins5.jpg",
+      "PackagePath": "staticwebassets\\images\\blog\\ins5.jpg"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\images\\blog\\insta.jpg",
+      "PackagePath": "staticwebassets\\images\\blog\\insta.jpg"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\images\\blog\\pp1.html",
+      "PackagePath": "staticwebassets\\images\\blog\\pp1.html"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\images\\blog\\pp2.html",
+      "PackagePath": "staticwebassets\\images\\blog\\pp2.html"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\images\\blog\\pp3.html",
+      "PackagePath": "staticwebassets\\images\\blog\\pp3.html"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\images\\blog\\pp4.jpg",
+      "PackagePath": "staticwebassets\\images\\blog\\pp4.jpg"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\images\\blog\\sblog.jpg",
+      "PackagePath": "staticwebassets\\images\\blog\\sblog.jpg"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\images\\causes\\b-cs1.jpg",
+      "PackagePath": "staticwebassets\\images\\causes\\b-cs1.jpg"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\images\\causes\\cause1.jpg",
+      "PackagePath": "staticwebassets\\images\\causes\\cause1.jpg"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\images\\causes\\cs1.jpg",
+      "PackagePath": "staticwebassets\\images\\causes\\cs1.jpg"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\images\\causes\\cs2.jpg",
+      "PackagePath": "staticwebassets\\images\\causes\\cs2.jpg"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\images\\causes\\cs3.jpg",
+      "PackagePath": "staticwebassets\\images\\causes\\cs3.jpg"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\images\\causes\\cs4.html",
+      "PackagePath": "staticwebassets\\images\\causes\\cs4.html"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\images\\causes\\cs5.jpg",
+      "PackagePath": "staticwebassets\\images\\causes\\cs5.jpg"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\images\\causes\\cs6.jpg",
+      "PackagePath": "staticwebassets\\images\\causes\\cs6.jpg"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\images\\causes\\cs8.jpg",
+      "PackagePath": "staticwebassets\\images\\causes\\cs8.jpg"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\images\\components\\ChatGPT.png",
+      "PackagePath": "staticwebassets\\images\\components\\ChatGPT.png"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\images\\components\\care.png",
+      "PackagePath": "staticwebassets\\images\\components\\care.png"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\images\\components\\ct1.png",
+      "PackagePath": "staticwebassets\\images\\components\\ct1.png"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\images\\components\\ct2.png",
+      "PackagePath": "staticwebassets\\images\\components\\ct2.png"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\images\\components\\ct3.png",
+      "PackagePath": "staticwebassets\\images\\components\\ct3.png"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\images\\components\\ct4.png",
+      "PackagePath": "staticwebassets\\images\\components\\ct4.png"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\images\\components\\donate.png",
+      "PackagePath": "staticwebassets\\images\\components\\donate.png"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\images\\components\\f-logo.png",
+      "PackagePath": "staticwebassets\\images\\components\\f-logo.png"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\images\\components\\favicon.ico",
+      "PackagePath": "staticwebassets\\images\\components\\favicon.ico"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\images\\components\\hand.png",
+      "PackagePath": "staticwebassets\\images\\components\\hand.png"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\images\\components\\logo-y.png",
+      "PackagePath": "staticwebassets\\images\\components\\logo-y.png"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\images\\components\\logo-ye.png",
+      "PackagePath": "staticwebassets\\images\\components\\logo-ye.png"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\images\\components\\logo.png",
+      "PackagePath": "staticwebassets\\images\\components\\logo.png"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\images\\components\\mis1.png",
+      "PackagePath": "staticwebassets\\images\\components\\mis1.png"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\images\\components\\mis2.png",
+      "PackagePath": "staticwebassets\\images\\components\\mis2.png"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\images\\components\\mis3.png",
+      "PackagePath": "staticwebassets\\images\\components\\mis3.png"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\images\\components\\volunteer.png",
+      "PackagePath": "staticwebassets\\images\\components\\volunteer.png"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\images\\events\\b-event.jpg",
+      "PackagePath": "staticwebassets\\images\\events\\b-event.jpg"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\images\\events\\ev1.jpg",
+      "PackagePath": "staticwebassets\\images\\events\\ev1.jpg"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\images\\events\\ev2.jpg",
+      "PackagePath": "staticwebassets\\images\\events\\ev2.jpg"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\images\\events\\event1.jpg",
+      "PackagePath": "staticwebassets\\images\\events\\event1.jpg"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\images\\events\\event2.jpg",
+      "PackagePath": "staticwebassets\\images\\events\\event2.jpg"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\images\\gallery\\gl-1.jpg",
+      "PackagePath": "staticwebassets\\images\\gallery\\gl-1.jpg"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\images\\gallery\\gl-2.jpg",
+      "PackagePath": "staticwebassets\\images\\gallery\\gl-2.jpg"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\images\\gallery\\gl-3.jpg",
+      "PackagePath": "staticwebassets\\images\\gallery\\gl-3.jpg"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\images\\gallery\\gl-4.html",
+      "PackagePath": "staticwebassets\\images\\gallery\\gl-4.html"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\images\\gallery\\gl-5.jpg",
+      "PackagePath": "staticwebassets\\images\\gallery\\gl-5.jpg"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\images\\gallery\\gl-6.jpg",
+      "PackagePath": "staticwebassets\\images\\gallery\\gl-6.jpg"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\images\\gallery\\gl-7.jpg",
+      "PackagePath": "staticwebassets\\images\\gallery\\gl-7.jpg"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\images\\gallery\\gl-8.jpg",
+      "PackagePath": "staticwebassets\\images\\gallery\\gl-8.jpg"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\images\\gallery\\gl-9.jpg",
+      "PackagePath": "staticwebassets\\images\\gallery\\gl-9.jpg"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\images\\icon\\Eco-Sustainability.png",
+      "PackagePath": "staticwebassets\\images\\icon\\Eco-Sustainability.png"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\images\\icon\\Educational.png",
+      "PackagePath": "staticwebassets\\images\\icon\\Educational.png"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\images\\icon\\Healthcare.png",
+      "PackagePath": "staticwebassets\\images\\icon\\Healthcare.png"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\images\\icon\\Nourishment.png",
+      "PackagePath": "staticwebassets\\images\\icon\\Nourishment.png"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\images\\icon\\Religious.png",
+      "PackagePath": "staticwebassets\\images\\icon\\Religious.png"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\images\\icon\\kindness.png",
+      "PackagePath": "staticwebassets\\images\\icon\\kindness.png"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\images\\mo.jpg",
+      "PackagePath": "staticwebassets\\images\\mo.jpg"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\images\\nashmii1.png",
+      "PackagePath": "staticwebassets\\images\\nashmii1.png"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\images\\other\\0rs-1.jpg",
+      "PackagePath": "staticwebassets\\images\\other\\0rs-1.jpg"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\images\\other\\rs-1.jpg",
+      "PackagePath": "staticwebassets\\images\\other\\rs-1.jpg"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\images\\other\\rs-2.jpg",
+      "PackagePath": "staticwebassets\\images\\other\\rs-2.jpg"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\images\\other\\rs-3.jpg",
+      "PackagePath": "staticwebassets\\images\\other\\rs-3.jpg"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\images\\partner\\partner-bg.jpg",
+      "PackagePath": "staticwebassets\\images\\partner\\partner-bg.jpg"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\images\\partner\\pt1.png",
+      "PackagePath": "staticwebassets\\images\\partner\\pt1.png"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\images\\partner\\pt2.png",
+      "PackagePath": "staticwebassets\\images\\partner\\pt2.png"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\images\\partner\\pt3.png",
+      "PackagePath": "staticwebassets\\images\\partner\\pt3.png"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\images\\partner\\pt4.png",
+      "PackagePath": "staticwebassets\\images\\partner\\pt4.png"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\images\\partner\\pt5.png",
+      "PackagePath": "staticwebassets\\images\\partner\\pt5.png"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\images\\partner\\pt6.png",
+      "PackagePath": "staticwebassets\\images\\partner\\pt6.png"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\images\\project\\pr1.jpg",
+      "PackagePath": "staticwebassets\\images\\project\\pr1.jpg"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\images\\shop\\b-shop.jpg",
+      "PackagePath": "staticwebassets\\images\\shop\\b-shop.jpg"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\images\\shop\\shop2.jpg",
+      "PackagePath": "staticwebassets\\images\\shop\\shop2.jpg"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\images\\shop\\shop3.jpg",
+      "PackagePath": "staticwebassets\\images\\shop\\shop3.jpg"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\images\\shop\\shop4.jpg",
+      "PackagePath": "staticwebassets\\images\\shop\\shop4.jpg"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\images\\shop\\shop5.jpg",
+      "PackagePath": "staticwebassets\\images\\shop\\shop5.jpg"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\images\\shop\\shop7.jpg",
+      "PackagePath": "staticwebassets\\images\\shop\\shop7.jpg"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\images\\shop\\shop9.jpg",
+      "PackagePath": "staticwebassets\\images\\shop\\shop9.jpg"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\images\\team\\b-tm1.jpg",
+      "PackagePath": "staticwebassets\\images\\team\\b-tm1.jpg"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\images\\team\\tm1.jpg",
+      "PackagePath": "staticwebassets\\images\\team\\tm1.jpg"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\images\\team\\tm2.jpg",
+      "PackagePath": "staticwebassets\\images\\team\\tm2.jpg"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\images\\team\\tm3.jpg",
+      "PackagePath": "staticwebassets\\images\\team\\tm3.jpg"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\images\\team\\tm4.jpg",
+      "PackagePath": "staticwebassets\\images\\team\\tm4.jpg"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\images\\team\\tm5.jpg",
+      "PackagePath": "staticwebassets\\images\\team\\tm5.jpg"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\images\\team\\tm6.jpg",
+      "PackagePath": "staticwebassets\\images\\team\\tm6.jpg"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\images\\team\\tm7.jpg",
+      "PackagePath": "staticwebassets\\images\\team\\tm7.jpg"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\images\\team\\tm8.jpg",
+      "PackagePath": "staticwebassets\\images\\team\\tm8.jpg"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\js\\custom.js",
+      "PackagePath": "staticwebassets\\js\\custom.js"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\js\\form.js",
+      "PackagePath": "staticwebassets\\js\\form.js"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\js\\google-map.html",
+      "PackagePath": "staticwebassets\\js\\google-map.html"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\js\\isotope.pkgd.min.js",
+      "PackagePath": "staticwebassets\\js\\isotope.pkgd.min.js"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\js\\jquery-ui.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery-ui.min.js"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\js\\jquery.ajaxchimp.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery.ajaxchimp.min.js"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\js\\jquery.counterup.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery.counterup.min.js"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\js\\jquery.easing.1.3.js",
+      "PackagePath": "staticwebassets\\js\\jquery.easing.1.3.js"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\js\\jquery.magnific-popup.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery.magnific-popup.min.js"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\js\\jquery.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\js\\jquery.nice-select.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery.nice-select.min.js"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\js\\jquery.scrollUp.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery.scrollUp.min.js"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\js\\jquery.stellar.js",
+      "PackagePath": "staticwebassets\\js\\jquery.stellar.js"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\js\\jquery.syotimer.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery.syotimer.min.js"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\js\\jquery.waypoints.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery.waypoints.min.js"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\js\\owl.carousel.min.js",
+      "PackagePath": "staticwebassets\\js\\owl.carousel.min.js"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\js\\wow.js",
+      "PackagePath": "staticwebassets\\js\\wow.js"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-theme.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-theme.css"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-theme.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-theme.css.map"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-theme.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-theme.min.css"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-theme.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-theme.min.css.map"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\n19\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.test2.props",
+      "PackagePath": "build\\test2.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.test2.props",
+      "PackagePath": "buildMultiTargeting\\test2.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.test2.props",
+      "PackagePath": "buildTransitive\\test2.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.test2.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

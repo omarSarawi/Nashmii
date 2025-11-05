@@ -1,0 +1,107 @@
+<div class="container py-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8 col-lg-6">
+            <div class="card shadow-lg border-0">
+                <div class="card-header bg-warning text-white text-center">
+                    <h3 class="mb-0">Secure Donation</h3>
+                </div>
+                <div class="card-body">
+                    <form id="donationForm" method="post" class="needs-validation" asp-action="Donate"
+                        asp-controller="Home" novalidate>
+                        <input type="hidden" name="CompingId" value="@ViewBag.CompingId" />
+
+                        <!-- Funding Amount -->
+                        <div class="mb-3">
+                            <label for="fundingAmount" class="form-label">Funding Amount (JD)<span
+                                    class="text-danger">*</span></label>
+                            <div class="input-group">
+                                <span class="input-group-text bg-warning text-dark">JD</span>
+                                <input type="number" class="form-control" id="fundingAmount" name="Amount" min="1"
+                                    required>
+                                <div class="invalid-feedback">Please enter a valid amount.</div>
+                            </div>
+                        </div>
+
+                        <!-- Card Number -->
+                        <div class="mb-3">
+                            <label for="cardNumber" class="form-label">Card Number<span
+                                    class="text-danger">*</span></label>
+                            <input type="text" class="form-control" id="cardNumber" name="cardNumber"
+                                placeholder="1234567812345678" pattern="^\d{16}$" maxlength="16" inputmode="numeric"
+                                required>
+                            <div class="invalid-feedback">Please enter a valid 16-digit card number.</div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="expDate" class="form-label">Expiration Date (MM/YY)<span
+                                        class="text-danger">*</span></label>
+                                <input type="text" class="form-control" id="expDate" name="expDate" placeholder="MM/YY"
+                                    pattern="^(0[1-9]|1[0-2])\/\d{2}$" maxlength="5" required>
+                                <div class="invalid-feedback">Enter a valid expiration date (MM/YY).</div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="cvv" class="form-label">CVV<span class="text-danger">*</span></label>
+                                <input type="text" class="form-control" id="cvv" name="cvv" placeholder="123"
+                                    pattern="^\d{3}$" maxlength="3" inputmode="numeric" required>
+                                <div class="invalid-feedback">Enter a valid 3-digit CVV.</div>
+                            </div>
+                        </div>
+
+                        <!-- Submit Button -->
+                        <div class="text-center mt-4">
+                            <button type="submit" class="btn btn-lg btn-warning w-100 fw-semibold">
+                                Donate
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Scripts -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+<script>
+    @* // Phone input with default country
+    const phoneInput = document.querySelector("#donorPhone");
+    if (phoneInput) {
+        const iti = window.intlTelInput(phoneInput, {
+            initialCountry: "jo",
+            utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js"
+        });
+    }
+
+    // Bootstrap Form Validation
+    (function () {
+        'use strict';
+        const form = document.getElementById('donationForm');
+
+        form.addEventListener('submit', function (e) {
+            e.preventDefault();
+            form.classList.add('was-validated');
+
+            if (!form.checkValidity()) return;
+
+            const payload = {
+                fundingAmount: form.fundingAmount.value,
+                cardNumber: form.cardNumber.value,
+                expDate: form.expDate.value,
+                cvv: form.cvv.value,
+            };
+
+            fetch("/api/donations", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify(payload)
+            })
+                .then(res => res.ok ? res.json() : Promise.reject("Network error"))
+                .then(() => window.location.href = "thankyou.html")
+                .catch(err => {
+                    console.error("Submission failed:", err);
+                    alert("There was a problem processing your donation.");
+                });
+        });
+    })(); *@
+</script>

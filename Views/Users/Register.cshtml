@@ -1,0 +1,177 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Sign Up</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS v5.3 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- intl-tel-input CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css" />
+
+    <style>
+        .input-group-text {
+            background-color: #ffc107;
+            color: #fff;
+            font-weight: 600;
+        }
+
+        .btn-action {
+            background-color: #fff;
+            color: #212529;
+            border: 1px solid #212529;
+            border-radius: 50px;
+            padding: 0.75rem 2rem;
+            font-weight: 600;
+            transition: background-color 0.2s ease;
+        }
+
+        .btn-action:hover,
+        .btn-action:focus,
+        .btn-action:active {
+            background-color: #ffc107;
+            outline: none;
+        }
+    </style>
+</head>
+
+<body class="bg-light">
+    <div class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <h4 class="mb-4 text-center">Create Your Account</h4>
+
+                        <form id="signupForm" asp-action="Register" class="needs-validation" novalidate>
+                            <div class="row mb-3">
+                                <div class="col">
+                                    <label for="username" class="form-label">Username<span
+                                            class="text-danger">*</span></label>
+                                    <input name="username" type="text" class="form-control" id="firstName" required />
+                                    <div class="invalid-feedback">Enter your first name.</div>
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email <span class="text-danger">*</span></label>
+                                <input type="email" class="form-control" name="email" id="email" required />
+                                <div class="invalid-feedback">Enter a valid email.</div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="phone" class="form-label">Phone Number <span
+                                        class="text-danger">*</span></label>
+                                <input id="phone" type="tel" name="phone" class="form-control" required />
+                                <div class="invalid-feedback" id="phoneFeedback">Enter a valid Jordanian phone number
+                                    (e.g., 07X1234567).</div>
+                            </div>
+
+
+                            <div class="mb-3">
+                                <label for="password" class="form-label">Password <span
+                                        class="text-danger">*</span></label>
+                                <input type="password" name="password" class="form-control" id="password" minlength="8"
+                                    pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[^\w\s]).{8,}" required />
+                                <div class="invalid-feedback" id="pwFeedback">
+                                    Must be ≥ 8 chars, include uppercase, lowercase, number & symbol.
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="confirmPassword" class="form-label">Confirm Password <span
+                                        class="text-danger">*</span></label>
+                                <input type="password" name="confirmPassword" class="form-control" id="confirmPassword"
+                                    minlength="8" required />
+                                <div class="invalid-feedback" id="passFeedback">Passwords must match.</div>
+                            </div>
+
+                            <div class="d-flex justify-content-between align-items-center mt-4">
+                                <small>Already have an account? <a asp-controller="Users" asp-action="Login">Log
+                                        In</a></small>
+                                <button type="submit" id="signupBtn" class="btn btn-action">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS & intl-tel-input JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const daySel = document.getElementById("dobDay"),
+                yearSel = document.getElementById("dobYear"),
+                currentYear = new Date().getFullYear();
+
+            for (let d = 1; d <= 31; d++) daySel.add(new Option(d, d));
+            for (let y = currentYear; y >= 1900; y--) yearSel.add(new Option(y, y));
+
+            const form = document.getElementById("signupForm"),
+                pw = document.getElementById("password"),
+                cpw = document.getElementById("confirmPassword"),
+                phoneIn = document.getElementById("phone"),
+                pwFB = document.getElementById("pwFeedback"),
+                passFB = document.getElementById("passFeedback"),
+                phoneFB = document.getElementById("phoneFeedback");
+
+            const iti = window.intlTelInput(phoneIn, {
+                initialCountry: "jo",
+                preferredCountries: ["jo"],
+                utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js"
+            });
+
+            pw.addEventListener("input", () => {
+                pw.setCustomValidity("");
+                pwFB.style.display = "none";
+                if (!pw.validity.valid) {
+                    pw.setCustomValidity("Invalid");
+                    pwFB.style.display = "block";
+                }
+            });
+
+            cpw.addEventListener("input", () => {
+                cpw.setCustomValidity("");
+                passFB.style.display = "none";
+                if (pw.value !== cpw.value) {
+                    cpw.setCustomValidity("Passwords do not match");
+                    passFB.style.display = "block";
+                }
+            });
+
+            function validateJordanPhone(phone) {
+                const number = phone.replace(/\D/g, ""); // digits only
+                return /^07[7-9]\d{7}$/.test(number);
+            }
+
+            form.addEventListener("submit", (e) => {
+                const phoneValue = phoneIn.value.trim();
+
+                let isValidJordanPhone = validateJordanPhone(phoneValue);
+
+                if (!form.checkValidity() || !iti.isValidNumber() || !isValidJordanPhone) {
+                    e.preventDefault();
+                    e.stopPropagation();
+
+                    if (!iti.isValidNumber() || !isValidJordanPhone) {
+                        phoneIn.setCustomValidity("Invalid phone");
+                        phoneFB.style.display = "block";
+                    } else {
+                        phoneIn.setCustomValidity("");
+                        phoneFB.style.display = "none";
+                    }
+                }
+
+                form.classList.add("was-validated");
+            });
+        });
+    </script>
+</body>
+
+</html>

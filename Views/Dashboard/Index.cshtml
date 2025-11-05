@@ -1,0 +1,45 @@
+@{
+    Layout = "~/Views/Shared/adminDashboard.cshtml";
+    ViewData["Title"] = "Admin Dashboard";
+}
+
+<div class="container mt-5">
+    <div class="row mb-4">
+        <div class="col">
+            <h2 class="display-6 fw-bold">Welcome, Admin </h2>
+            <p class="text-muted">Here’s a quick overview of your control center.</p>
+        </div>
+    </div>
+
+    <div class="row g-4">
+        <div class="col-md-4">
+            <div class="card border-start border-primary border-4 shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title text-primary">Pending Requests</h5>
+                    <p class="card-text">Review and approve hospitals submitted by users.</p>
+                    <a href="/ContactRequest" class="btn btn-outline-primary btn-sm">View Requests</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card border-start border-success border-4 shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title text-success">Registered Hospitals</h5>
+                    <p class="card-text">View all hospitals currently in the system.</p>
+                    <a href="/Hospital" class="btn btn-outline-success btn-sm">View Hospitals</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card border-start border-warning border-4 shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title text-warning">Manage Users</h5>
+                    <p class="card-text">Edit user roles or remove inactive accounts.</p>
+                    <a href="/Users" class="btn btn-outline-warning btn-sm">Manage Users</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

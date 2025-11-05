@@ -1,0 +1,89 @@
+@model List<test2.Models.BloodDonation>
+
+@{
+    ViewData["Title"] = "Donor List";
+}
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+<style>
+    body {
+        background-color: #f8f9fa;
+        padding: 20px;
+    }
+
+    .back-container {
+        position: sticky;
+        top: 20px;
+        z-index: 1000;
+    }
+
+    .btn-back {
+        display: inline-flex;
+        align-items: center;
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+        border-radius: 50px;
+        transition: background-color 0.2s, transform 0.1s;
+    }
+
+    .btn-back i {
+        margin-right: 0.5rem;
+    }
+
+    .btn-back:hover,
+    .btn-back:focus {
+        background-color: #e2e6ea;
+        transform: translateY(-1px);
+        text-decoration: none;
+    }
+
+    @@media (max-width: 576px) {
+        .table-responsive {
+            font-size: 14px;
+        }
+    }
+</style>
+
+<div class="container">
+    <div class="back-container mb-4">
+        <button type="button" class="btn btn-light btn-back shadow-sm" onclick="history.back()" aria-label="Go back">
+            <i class="bi bi-arrow-left-circle-fill fs-4"></i> Back
+        </button>
+    </div>
+
+    <h2 class="mb-3 text-center">Donor List</h2>
+    <div class="table-responsive">
+        <table class="table align-middle">
+            <thead class="table-dark">
+                <tr>
+                    <th>Donor Name</th>
+                    <th>Phone Number</th>
+                    <th>Email</th>
+                    <th>Blood Type</th>
+                    <th>Donation Amount</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var donation in Model)
+                {
+                    <tr>
+                        <td>@donation.User?.Username</td>
+                        <td>@donation.User?.Phone</td>
+                        <td>@donation.User?.Email</td>
+                        <td>@donation.BloodComping?.Type</td>
+                        <td>@donation.Amount</td>
+                        <td>
+                            <span class="badge @(donation.Status == "Approved" ? "bg-success" : donation.Status == "Rejected" ? "bg-danger" : "bg-warning")">
+                                @donation.Status
+                            </span>
+                        </td>
+                        
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

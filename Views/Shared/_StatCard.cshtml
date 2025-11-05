@@ -1,0 +1,13 @@
+@model (string Label, object Value, string IconClasses)
+
+<div class="col-6">
+    <div class="card p-3 bg-white h-100">
+        <div class="d-flex align-items-center">
+            <i class="fas @Model.IconClasses fa-2x me-3"></i>
+            <div>
+                <div class="small text-muted">@Model.Label.Trim('_').Trim()</div>
+                <div class="h5 mb-0">@Model.Value</div>
+            </div>
+        </div>
+    </div>
+</div>

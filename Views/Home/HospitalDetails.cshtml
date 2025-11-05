@@ -1,0 +1,342 @@
+@model test2.Models.ViewModels.HospitalWithCompingsViewModel
+
+@{
+    ViewData["Title"] = "HospitalBloodComping";
+}
+<!-- Preloader -->
+<div id="preloader">
+    <div class="preloader">
+        <span></span>
+        <span></span>
+    </div>
+</div>
+
+<!-- Header Start -->
+<section class="promo-area" data-stellar-background-ratio="0.5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="promo-wrap">
+                    <h1 class="promo-title">Single <span>Blog</span></h1>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item">
+                                <a href="index-2.html">Home</a>
+                            </li>
+                            <li class="breadcrumb-item active" aria-current="page">
+                                single Blog
+                            </li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Promo Area End -->
+
+<!-- Cause Page Start -->
+<div class="single-blog section-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <article class="article-entry">
+                    <div class="post-detials">
+                        <h2 class="article-title mb-3">
+                            The Benefits of Blood Donation
+                        </h2>
+                        <p>
+                            Blood donation is a noble humanitarian act that saves lives
+                            every day. It provides critical support for patients who
+                            require blood for surgery, accident recovery, or fighting
+                            serious illnesses. Donating blood stimulates the donor’s
+                            circulatory system and encourages the production of new blood
+                            cells, enhancing overall well-being.
+                            <br />
+                            Regular donations may even lower the risk of heart disease by
+                            maintaining balanced iron levels. Many centers also offer
+                            complimentary health screenings during donation appointments,
+                            helping detect potential issues early on. Moreover, donating
+                            blood instills a deep sense of fulfillment and pride, as each
+                            donor contributes to a vital community resource. By giving a
+                            small part of themselves, donors help build a resilient
+                            society while experiencing personal growth and a renewed
+                            connection to humanity. In this way, blood donation is not
+                            only an act of kindness but also a step toward improving your
+                            own long-term wellness.
+                        </p>
+                        <ul class="post-image">
+                            <li>
+                                <a href="#"><img src="~/images/blog/blog-2.jpg" alt="" /></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="~/images/blog/blog-6.jpg" alt="" /></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="~/images/blog/blog-5.jpg" alt="" /></a>
+                            </li>
+                        </ul>
+                        <h2 class="article-title mb-3">Project objectives</h2>
+                        <ul class="info-list">
+                            <li>
+                                ​Ensure a consistent supply of safe, voluntary blood
+                                donations.
+                            </li>
+                            <li>
+                                ​Educate communities on the importance of regular blood
+                                donation.
+                            </li>
+                            <li>
+                                ​Foster a culture of altruism through donor recognition
+                                programs.
+                            </li>
+                            <li>
+                                ​Expand donor outreach via mobile drives and local
+                                partnerships.
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+            </div>
+            <div class="col-lg-4 col-sm-12">
+                <aside class="sidebar">
+                    <!-- Search Widget -->
+                    <div class="widget">
+                        <h3 class="widget-title">Names of blood banks</h3>
+                        <div class="tagcloud">
+                            <a href="#">Al-Yarmouk </a>
+                            <a href="#">Al-Bashir</a>
+                            <a href="#">Prince Hamzah</a>
+                            <a href="#">Prince Faisal</a>
+                            <a href="#">Al-Salt</a>
+                            <a href="#">Al-Hussein</a>
+                            <a href="#">Princess Basma</a>
+                            <a href="#">Princess Badea</a>
+                            <a href="#">Princess Rahma</a>
+                        </div>
+                    </div>
+                    <!-- Category Widget -->
+                    <div class="widget">
+                        <h3 class="widget-title">Fields Nashmi</h3>
+                        <ul>
+                            <li><a href="field.html">Educational</a></li>
+                            <li><a href="field.html">Nourishment</a></li>
+                            <li><a href="field.html">Healthcare</a></li>
+                            <li><a href="field.html">Eco-Sustainability</a></li>
+                            <li><a href="field.html">Community & Social Impact</a></li>
+                            <li><a href="field.html">Religious</a></li>
+                        </ul>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section class="causes-area cause-page section-padding">
+    <div class="container">
+        <div class="row">
+            @if (Model != null)
+            {
+                @if (Model.BloodCompings != null && Model.BloodCompings.Any())
+                {
+                    @foreach (var comping in Model.BloodCompings)
+                    {
+                        // Calculate percentage safely
+                        var percent = (comping.Amount.HasValue && comping.Goal.HasValue && comping.Goal > 0)
+                        ? (int)(comping.Amount.Value * 100 / comping.Goal.Value)
+                        : 0;
+
+                        <div class="col-lg-4 col-sm-6 mb-4">
+                            <div class="single-cause h-100 shadow-sm">
+                                <figure class="cause-thumb">
+                                    @* Replace this static URL with your actual image source or cloudinary link *@
+                                    <img src="https://lh3.googleusercontent.com/gps-cs-s/AC9h4noWB4n0cRBF7r29cyltwBYxtut-8X5Wq3IrF-9fEM2r2rAI8nCR33L6xv5LIp3LrFXgOBRWsZ_zaFmuCR5pqAk6Nfj1U-GIj9H_Xttl7ekw6G3RCl0RRCagyiY5eICwhH8QRMy-Tg=s680-w680-h510-rw"
+                                        alt="@Model.Hospital.Name" class="img-fluid" />
+                                </figure>
+                                <div class="cause-detials p-3">
+                                    <h3 class="fw-bold">@Model.Hospital.Name</h3>
+
+                                    <p class="importantBlood mb-2">
+                                        Highest Virtue Needed &nbsp; | &nbsp;
+                                        <span class="unitBlood">@comping.Type</span>
+                                    </p>
+
+                                    <div class="cause-donate mb-2">
+                                        <div class="cause-raise">
+                                            <label>Collected</label> @comping.Amount Unit
+                                        </div>
+                                        <div class="cause-goal">
+                                            <label>Goal</label> @comping.Goal Unit
+                                        </div>
+                                    </div>
+
+                                    <div class="progress mb-2">
+                                        <div class="progress-bar wow fadeInLeft" role="progressbar" style="width: @percent%"
+                                            aria-valuenow="@percent" aria-valuemin="0" aria-valuemax="100">
+                                            @percent%
+                                        </div>
+                                    </div>
+
+                                    <hr />
+
+                                    @* When user clicks this link, open the modal *@
+                                    <a href="#"
+                                        onclick="openModal('@Model.Hospital.Id', '@Model.Hospital.Name', '@comping.Type', '@comping.Id'); return false;">
+                                        <p class="details text-center">Donate now</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                }
+                else
+                {
+                    <div class="col-12">
+                        <p class="text-danger text-center">No camps available to display.</p>
+                    </div>
+                }
+            }
+            else
+            {
+                <div class="col-12">
+                    <p class="text-danger text-center">No model data found.</p>
+                </div>
+            }
+        </div>
+    </div>
+</section>
+
+<!-- Footer Area Start -->
+<footer class="footer-area">
+    <div class="footer-top"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-sm-6">
+                <div class="footer-widget footer-about">
+                    <div class="f-logo">
+                        <a href="#">
+                            <img src="~/images/components/logo-ye.png" alt="Logo" />
+                        </a>
+                    </div>
+                    <p>
+                        Support life-saving causes and empower communities by donating
+                        money to provide essential resources, donating blood to save
+                        lives, and shopping with us to support low-income entrepreneurs.
+                    </p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 offset-lg-1 col-sm-5 offset-sm-1">
+                <div class="footer-widget">
+                    <h3 class="widget-title">Useful Links</h3>
+                    <ul>
+                        <li><a href="~/">Profile</a></li>
+                        <li><a href="~/Home/AboutUs">About Us</a></li>
+                        <li><a href="~/Home/BloodCamping">Blood donation</a></li>
+                        <li><a href="~/Shop/Index">Shop</a></li>
+                        <li><a href="~/ContactRequest/CreateContact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-2 col-sm-6">
+                <div class="footer-widget">
+                    <h3 class="widget-title">Filde Nashmi </h3>
+                    <ul>
+                        <li><a href="~/Home/Categories/28">
+                                Educational</a></li>
+                        <li><a href="~//Home/Categories/29">
+                                Nutrition</a></li>
+                        <li><a href="~/Home/Categories/30">
+                                Healthcare</a></li>
+                        <li><a href="~/Home/Categories/31">
+                                Social Solidarity</a></li>
+                        <li><a href="Home/Categories/32">
+                                Religious</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-5 offset-sm-1 offset-lg-0">
+                <div class="footer-widget">
+                    <h3 class="widget-title">Contact Us</h3>
+                    <ul class="footer-contact">
+                        <li>
+                            <i class="fa fa-home"></i>
+                            <span>Jordan Amman</span>
+                        </li>
+                        <li>
+                            <i class="fa fa-phone"></i>
+                            <span><a href="tel:+00962787020188">00962787020188</a></span>
+                        </li>
+                        <li>
+                            <i class="fa fa-envelope"></i>
+                            <span><a href="mailto:omarsarawi66@gmail.com">nashmi@gmail.com</a></span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row copy-right g-0">
+            <div class="col-xl-6 col-md-7 order-2 order-md-1">
+                <p>
+                    Copyright © 2025. All Rights Reserved by
+                    <a href="#">Nashmi</a>
+                </p>
+            </div>
+
+        </div>
+    </div>
+</footer>
+<!-- Footer Area Start -->
+
+<!-- Donation Modal (initially hidden) -->
+<div id="donationModal" style="
+    display: none;
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 10;
+    align-items: center;
+    justify-content: center;
+">
+    <div style="
+        background: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        width: 90%;
+        max-width: 400px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    ">
+        <h4 id="modalTitle"></h4>
+        <form id="donationForm" method="post" asp-controller="BloodDonations" asp-action="CreateDonor">
+            <input type="hidden" name="BloodCompingId" id="bloodCompingId" />
+            <div class="text-end mt-4">
+                <button type="submit" class="btn btn-danger">Yes, I agree</button>
+                <button type="button" class="btn btn-secondary ms-2" onclick="closeModal()">No</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<script>
+    function openModal(hospitalId, hospitalName, bloodType, compingId) {
+        // Set the modal text
+        document.getElementById("modalTitle").textContent =
+            `Do you want to donate blood type ${bloodType} for ${hospitalName}?`;
+        // Store compingId in the hidden input
+        document.getElementById("bloodCompingId").value = compingId;
+        // Show the modal
+        document.getElementById("donationModal").style.display = "flex";
+    }
+
+    function closeModal() {
+        // Hide the modal again
+        document.getElementById("donationModal").style.display = "none";
+    }
+</script>
